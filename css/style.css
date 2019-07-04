@@ -1,0 +1,73 @@
+:root{
+  --font-name: sans-serif;
+  --font-size: 30px;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  background: linear-gradient(to right,#1A2980,#26D0CE); 
+  font-family: sans-serif;
+  color: white;
+}
+
+.location,
+.temperature{
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature-description{
+
+  font-size: var(--font-size);
+}
+
+.temperature{
+  flex-direction: column;
+}
+.latitude{
+  margin-top: 50px;
+  font-size: var(--font-size);
+  font-family: var(--font-name);
+}
+.latitude::before{
+  content: "Latitude : ";
+  font-size: var(--font-size);
+}
+
+.longitude{
+  margin-top: 50px;
+  font-family: var(--font-name);
+  font-size: var(--font-size);
+
+}
+.longitude::before{
+  margin: 10px;
+  content: "Longitude : ";
+  font-size: var(--font-size);
+}
+.degree-section{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span{
+  margin: 10px;
+  font-size: 30px;
+}
+.degree-section h2{
+  font-size: 40px;
+}
