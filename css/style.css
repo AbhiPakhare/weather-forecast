@@ -1,6 +1,6 @@
 :root{
   --font-name: sans-serif;
-  --font-size: 30px;
+  --font-size: 25px;
 
 }
 *{
@@ -23,7 +23,7 @@ body{
 .location,
 .temperature{
   height: 30vh;
-  width: 50%;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
